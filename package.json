@@ -1,0 +1,22 @@
+{
+  "name": "weba3",
+  "version": "1.0.0",
+  "description": "**Please view `COMP3612 Assignment 3.pdf` for instructions**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKyleK/webA3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KKyleK/webA3/issues"
+  },
+  "homepage": "https://github.com/KKyleK/webA3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
