@@ -102,7 +102,12 @@ const handleByName = app => {
 });
 }
 
+/* Function: send_message.
 
+   Input: A resp object, an error message and a list of matches.
+   Return: Fills the json portion of response with either the error message,
+           or the non-empty matches
+*/
 function send_message(resp,matches,error_msg){
     if (matches.length > 0){
         resp.json(matches);
@@ -113,6 +118,6 @@ function send_message(resp,matches,error_msg){
     return;
 }
 
-module.exports = {
-    handleAll, handleById, handleByGalleryId, handleByArtistId, handleByDate, handleByText, handleByName, send_message         //this is now a function I can invoke in main.js 
+module.exports = {    //exports send_message for use by the other routing files.
+    handleAll, handleById, handleByGalleryId, handleByArtistId, handleByDate, handleByText, handleByName, send_message
 };
