@@ -83,15 +83,17 @@ const handleByName = app => {
 
     app.get("/api/painting/color/:name", (req,resp) => {
 
+        const input_name = req.params.name.toLowerCase();
+        input_name.replace('+',' ');                       //replace any '+' with spaces
         const matches = paintingData.filter(p => {         //Tests every painting
 
             for (let c of p.details.annotation.dominantColors){   //Check each element inside of dominantColors
 
                 const name = c.name;
-              //  console.log(name);
+              
                 if(name){
                     const lower_name = name.toLowerCase();
-                    if(lower_name == req.params.name.toLowerCase()){
+                    if(lower_name == input_name){
                         return p;
                     }
                 }
