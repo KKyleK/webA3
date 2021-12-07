@@ -18,8 +18,7 @@ artistRouter.handleByCountry(app);
 
 galleryRouter.handleAll(app);
 galleryRouter.handleByCountry(app);
-let port = 443;             //Default port used by https
 
-app.listen(port,()=> {      //start server
+app.listen(process.env.PORT || 8080,()=> {      //uses whatever port heroku as avalible
     console.log(`Server is running on port ${port}`);
 });
