@@ -13,7 +13,7 @@ https://paintingsapi.herokuapp.com/api/painting/year/2200/2400
 https://paintingsapi.herokuapp.com/api/painting/title/self
 https://paintingsapi.herokuapp.com/api/painting/title/dfjkghdfkgh
 https://paintingsapi.herokuapp.com/api/painting/color/NAPA
-https://paintingsapi.herokuapp.com/api/painting/color/coffee+bean    (works with coffee bean)
+https://paintingsapi.herokuapp.com/api/painting/color/coffee+bean   
 https://paintingsapi.herokuapp.com/api/painting/color/kcvhvxchbkcj
 https://paintingsapi.herokuapp.com/api/artists
 https://paintingsapi.herokuapp.com/api/artists/Netherlands
