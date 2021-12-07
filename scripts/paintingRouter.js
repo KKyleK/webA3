@@ -83,7 +83,7 @@ const handleByName = app => {
 
     app.get("/api/painting/color/:name", (req,resp) => {
 
-        const input_name = req.params.name.toLowerCase();
+        let input_name = req.params.name.toLowerCase();
         input_name = input_name.replace('+',' ');                       //replace any '+' with spaces
         console.log(input_name);
         const matches = paintingData.filter(p => {         //Tests every painting
