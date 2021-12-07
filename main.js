@@ -20,5 +20,5 @@ galleryRouter.handleAll(app);
 galleryRouter.handleByCountry(app);
 
 app.listen(process.env.PORT || 8080,()=> {      //uses whatever port heroku as avalible
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running`);
 });
